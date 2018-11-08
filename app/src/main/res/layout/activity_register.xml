@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.sim.tunisierando.RegisterActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="300dp"
+                android:orientation="vertical"
+                android:background="#ccd4c6c6"
+                android:layout_height="400dp"
+                android:id="@+id/linearLayout2"
+
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+
+                    android:text="S'inscrire"
+                    android:textSize="30dp"/>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/EditTextFloatLabel">
+                    <EditText
+                        android:id="@+id/ed_login"
+                        android:hint="Pseudo"
+                        android:layout_width="match_parent"
+                        android:inputType="text"
+                        android:drawableStart="@drawable/icons8_admin"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textCursorDrawable="@drawable/cursor_color_editext"
+                        android:textColor="@color/grey_200"
+                        android:background="@drawable/edittext_line_thikness"
+                        android:drawableLeft="@drawable/icons8_admin" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/EditTextFloatLabel">
+                    <EditText
+                        android:id="@+id/ed_email"
+                        android:hint="@string/email"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:textColor="@color/grey_200"
+                        android:textCursorDrawable="@drawable/cursor_color_editext"
+                        android:drawableStart="@drawable/icons8_email"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:background="@drawable/edittext_line_thikness"
+                        android:drawableLeft="@drawable/icons8_lock" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/EditTextFloatLabel">
+                    <EditText
+                        android:id="@+id/ed_password"
+                        android:hint="Mot de passe"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:textColor="@color/grey_200"
+                        android:textCursorDrawable="@drawable/cursor_color_editext"
+                        android:drawableStart="@drawable/icons8_lock"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:background="@drawable/edittext_line_thikness"
+                        android:drawableLeft="@drawable/icons8_lock" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_password1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/EditTextFloatLabel">
+                    <EditText
+                        android:id="@+id/ed_password1"
+                        android:hint="Confirmez votre mot de passe"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:textColor="@color/grey_200"
+                        android:textCursorDrawable="@drawable/cursor_color_editext"
+                        android:drawableStart="@drawable/icons8_lock"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:background="@drawable/edittext_line_thikness"
+                        android:drawableLeft="@drawable/icons8_lock" />
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:text="Terminer"
+                    android:layout_width="250dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_signup_style"
+                    android:alpha="0.75"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="55dp"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+
+                    <Button
+                        android:id="@+id/btnGoToLogin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:text="Retour vers login"
+                        android:textColor="@color/grey_200" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

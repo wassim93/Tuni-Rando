@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sim.tunisierando">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.sim.tunisierando.LoginActivity" />
+        <activity android:name="com.sim.tunisierando.IntroActivity" />
+        <activity android:name="com.sim.tunisierando.RegisterActivity" />
+        <activity
+            android:name="com.sim.tunisierando.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.sim.tunisierando.NewEventActivity" />
+        <activity android:name="com.sim.tunisierando.CompleteProfileActivity" />
+        <activity android:name="com.sim.tunisierando.TipsandTricksActivity" />
+        <activity android:name="com.sim.tunisierando.DetailEventActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sim.tunisierando.HomeActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCiq4LzNibOKDwijQ9zuZayS_1q-1O1t0E" />
+
+        <activity android:name="com.sim.tunisierando.ActivateAccountActivity" />
+        <activity android:name="com.sim.tunisierando.ProfileActivity" />
+        <activity android:name="com.sim.tunisierando.TipsTricksListActivity" />
+        <activity android:name="com.sim.tunisierando.MagasinActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sim.tunisierando.HomeActivity" />
+        </activity>
+        <activity android:name="com.sim.tunisierando.AddProductActivity" />
+        <activity android:name="com.sim.tunisierando.CommentActivity" />
+        <activity
+            android:name="com.sim.tunisierando.AddPostActivity"
+            android:parentActivityName="com.sim.tunisierando.HomeActivity" />
+        <activity android:name="com.sim.tunisierando.AccountActivity" />
+        <activity android:name="com.sim.tunisierando.DetailProduct">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sim.tunisierando.MagasinActivity" />
+        </activity>
+        <activity android:name="com.sim.tunisierando.UpdatePostActivity" />
+        <activity android:name="com.sim.tunisierando.UpdateProfileActivity" />
+        <activity android:name="com.sim.tunisierando.TipsTricksDetailsActivity" />
+        <activity android:name="com.sim.tunisierando.UpdateTipsTricksActivity" />
+        <activity android:name="com.sim.tunisierando.UpdateEvent" />
+        <activity android:name="com.sim.tunisierando.GallerieActivity" />
+        <activity android:name="com.sim.tunisierando.UpdateProductActivity" />
+        <activity android:name="com.sim.tunisierando.ResetPasswordActivity" />
+        <activity android:name="com.sim.tunisierando.ResetPasswordStage2Activity" />
+        <activity android:name="com.sim.tunisierando.ResetPasswordFinalStepActivity" />
+        <activity android:name="com.sim.tunisierando.ReActivateActivity" />
+        <activity android:name="com.sim.tunisierando.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sim.tunisierando.LikesActivity"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="txtloginAct">#434343</color>
+    <color name="grey800">#424242</color>
+    <color name="grey900">#212121</color>
+    <color name="fbcolor">#3F51B4</color>
+    <color name="fb_focus_color">#5973FF</color>
+    <color name="white">#f7f7f7</color>
+    <color name="googlecolor">#F4511E</color>
+    <color name="google_focus_color">#CC4419</color>
+    <color name="seacolor">#77baa4</color>
+    <color name="a700">#00C853</color>
+    <color name="a100">#B9F6CA</color>
+    <color name="green200">#A5D6A7</color>
+    <color name="floatingbbtngreen">#27ae60</color>
+    <color name="floatingbtnred">#f44336</color>
+    <color name="appcolor">#41c652</color>
+    <color name="lightgray">#D3D3D3</color>
+    <color name="gray">#808080</color>
+    <color name="crimson">#DC143C</color>
+    <color name="green100">#C8E6C9</color>
+    <color name="red500">#F44336</color>
+    <color name="lightgreen">#8BC34A</color>
+</resources>

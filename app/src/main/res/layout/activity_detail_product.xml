@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sim.tunisierando.DetailProduct">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_shop"/>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="3dp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.robohorse.pagerbullet.PagerBullet
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    app:panelHeightInDp="40dp" />
+
+                <TextView
+                    android:id="@+id/pro_title"
+                    android:layout_width="match_parent"
+                    android:hint="title"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/viewPager"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/pro_prix"
+                    android:layout_width="match_parent"
+                    android:textSize="18sp"
+                    android:hint="prix"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/pro_title"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/pro_contact"
+                    android:layout_width="wrap_content"
+                    android:hint="Contact"
+                    android:textSize="18sp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/pro_prix"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true" />
+
+
+                <TextView
+                    android:id="@+id/pro_type"
+                    android:layout_width="wrap_content"
+                    android:hint="Type :"
+                    android:textSize="18sp"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/pro_contact"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:id="@+id/separator"
+                    android:layout_below="@+id/pro_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/pro_description"
+                    android:layout_width="match_parent"
+                    android:hint="Description"
+                    android:textSize="18sp"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/separator"
+                    android:layout_height="wrap_content" />
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="10dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:background="@color/lightgreen"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:text="Suggestion de meme produit"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/prod_suggestionlist"
+                    android:layout_below="@id/header"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

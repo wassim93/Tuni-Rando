@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.sim.tunisierando.TipsandTricksActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="partager vos experiences  "
+            android:textColor="#1b1a1a"
+           android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="28dp"/>
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/text1"
+            android:layout_centerInParent="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cardBackgroundColor="#cccfc9c9"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_margin="11dp"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="3dp"
+            android:layout_height="wrap_content"
+ >
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/titre1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="Titre"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/titre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tx1"
+                    android:layout_below="@+id/titre1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/content"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:inputType="text|textMultiLine"
+                        android:gravity="top"/>
+                </LinearLayout>
+
+                <Button
+                    android:layout_below="@+id/tx1"
+                    android:id="@+id/addimage"
+                    android:drawableLeft="@drawable/ic_menu_gallery"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="17dp"
+                    android:textColor="#181717"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ajouter image "
+
+                    />
+                <Button
+                    android:layout_below="@+id/addimage"
+                    android:id="@+id/addarticle"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="30dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ajouter l'article"
+                    android:textColor="#fff"
+
+                    android:background="#42b957"/>
+            </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

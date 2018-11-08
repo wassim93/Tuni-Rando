@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.sim.tunisierando.ActivateAccountActivity">
+
+    <LinearLayout
+
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="#ccd4c6c6"
+        android:layout_width="340dp"
+        android:orientation="vertical"
+        android:layout_height="200dp"
+        android:id="@+id/linearLayout3"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activer votre compte"
+            android:textSize="30dp"
+            android:layout_marginTop="13dp"
+            android:textAlignment="center"
+            />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/EditTextFloatLabel">
+            <EditText
+                android:id="@+id/ed_activation_code"
+                android:hint="  votre code"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:textCursorDrawable="@drawable/cursor_color_editext"
+
+                android:drawableStart="@drawable/ic_lock_open_black"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edittext_line_thikness"
+                android:drawableLeft="@drawable/icons8_lock" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnActivate"
+            android:text="Activer votre compte "
+            android:layout_width="250dp"
+            android:onClick="onClick"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_signup_style"
+            android:alpha="0.75"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

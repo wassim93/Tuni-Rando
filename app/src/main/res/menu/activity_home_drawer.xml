@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profil"
+            android:icon="@drawable/icons8_user_48"
+            android:title="Profil" />
+        <item
+            android:id="@+id/nav_astuces"
+            android:icon="@drawable/icons8_greentech_48"
+            android:title="Astuces " />
+        <item
+            android:id="@+id/nav_magasin"
+            android:icon="@drawable/icons8_shopping_cart_48"
+            android:title="Magasin" />
+
+        <item
+            android:id="@+id/nav_gallerie"
+            android:icon="@drawable/icons8_photo_gallery_48"
+            android:title="Gallerie" />
+
+
+    </group>
+
+
+    <item android:title="">
+        <menu>
+
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Déconnexion" />
+        </menu>
+    </item>
+
+
+</menu>

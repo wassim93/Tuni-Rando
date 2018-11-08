@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sugg_prod_lin"
+    android:orientation="vertical"
+    android:layout_width="200dp"
+    android:layout_margin="5dp"
+    android:background="@color/lightgreen"
+    android:layout_height="220dp">
+    <ImageView
+        android:id="@+id/sugg_pro_img"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center|center_horizontal"
+        android:src="@drawable/rando"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/sugg_prod_title"
+        android:text="Prix : 50 DT"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

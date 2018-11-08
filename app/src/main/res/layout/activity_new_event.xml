@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sim.tunisierando.NewEventActivity"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/appcolor"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <RelativeLayout
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar_shop"/>
+            </RelativeLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_below="@id/collapsing_toolbar"
+        android:layout_width="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_below="@id/toolbar"
+                android:src="@drawable/placeholder"
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+                android:layout_width="match_parent"
+                android:id="@+id/placehold"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                app:layout_collapseMode="parallax"
+                android:minHeight="200dp" />
+
+            <Button
+                android:id="@+id/btn_uploadimg"
+                android:text="Ajouter des images"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:textColor="#424242"
+                android:background="@drawable/btn_upload_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/ed_evtitle"
+                android:layout_width="match_parent"
+                android:drawableStart="@drawable/icons8_text_box_48"
+                android:hint="@string/titre"
+                android:textSize="18sp"
+                android:layout_weight="2"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/icons8_text_box_48" />
+
+
+
+            <EditText
+                android:id="@+id/ed_evdepart"
+                android:layout_width="match_parent"
+                android:hint="@string/point_de_d_part"
+                android:drawableStart="@drawable/icons8_depart_48"
+                android:textSize="18sp"
+                android:layout_weight="2"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/icons8_depart_48" />
+
+            <EditText
+                android:id="@+id/ed_evarrive"
+                android:layout_width="match_parent"
+                android:hint="@string/point_d_arriv"
+                android:drawableStart="@drawable/icons8_destination_48"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:layout_weight="2"
+                android:layout_height="0dp"
+                android:drawableLeft="@drawable/icons8_destination_48" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:weightSum="4"
+                android:layout_marginTop="5dp"
+
+                android:layout_height="0dp">
+
+                <EditText
+                    android:id="@+id/ed_evdate"
+                    android:hint="Date de l'évènement"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/icons8_calendar_48"
+                    android:focusable="false"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icons8_calendar_48" />
+
+                <Spinner
+                    android:id="@+id/sp_evtype"
+                    android:layout_width="0dp"
+                    android:entries="@array/type"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_weight="2"
+                android:layout_marginTop="5dp"
+
+                android:layout_height="0dp">
+                <EditText
+                    android:id="@+id/ed_evnbplaces"
+                    android:layout_width="0dp"
+                    android:drawableStart="@drawable/icons8_safety_collection_place_48"
+                    android:layout_weight="1"
+                    android:hint="Nombre de places"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icons8_safety_collection_place_48" />
+
+                <Spinner
+                    android:id="@+id/sp_evniveau"
+                    android:inputType="date"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:entries="@array/niveau"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/ed_evdescription"
+                android:layout_width="match_parent"
+                android:hint="Description"
+                android:layout_weight="2"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/icons8_document_48"
+                android:layout_height="100dp"
+                android:drawableLeft="@drawable/icons8_document_48" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:weightSum="2"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/ed_evcontact"
+                    android:hint="Contact"
+                    android:drawableStart="@drawable/icons8_call_48"
+                    android:inputType="number"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icons8_call_48" />
+
+                <EditText
+                    android:id="@+id/ed_evprix"
+                    android:layout_width="0dp"
+                    android:drawableStart="@drawable/icons8_paper_money_48"
+                    android:hint="Prix"
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icons8_paper_money_48" />
+
+            </LinearLayout>
+
+            <Button
+            android:id="@+id/btn_create"
+            android:text="Créer l'évènement"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_add_event_style"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</RelativeLayout>

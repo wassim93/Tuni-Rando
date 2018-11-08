@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/appcolor</item>
+    </style>
+
+    <style name="EditTextFloatLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#bbbbc9</item>
+    </style>
+
+    <style name="EditTextHintColor" parent="Theme.AppCompat">
+        <item name="android:textColorHint">#bbbbc9</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="robostyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="colorPrimary">@color/appcolor</item>
+
+    </style>
+
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/appcolor</item>
+        <item name="android:textColor">@color/grey_200</item>
+    </style>
+
+
+    <style name="toolbarstyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="participate" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/appcolor</item>
+        <item name="colorButtonNormal">@color/googlecolor</item>
+    </style>
+
+
+
+
+</resources>

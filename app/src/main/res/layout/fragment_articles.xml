@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dedfe2"
+     tools:context="com.sim.tunisierando.fragments.ArticlesFragment">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/fav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp">
+
+
+        <TextView
+
+            android:id="@+id/itemTitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="6dp"
+            android:text="Evenements cette semaine "
+            android:textColor="#494848"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/separ3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff"
+            android:layout_below="@+id/itemTitle3"
+            android:layout_marginTop="5dp">
+
+        </View>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separ3"
+            android:clipToPadding="false"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:layout_below="@+id/separ3"
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="30dp"
+            android:text=" "
+            android:textColor="#d92424"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/fav"
+        android:id="@+id/fav1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp">
+
+
+        <TextView
+
+            android:id="@+id/itemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="6dp"
+            android:text="Produits qui peuvent vous intéresser "
+            android:textColor="#494848"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/separ1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff"
+            android:layout_below="@+id/itemTitle"
+            android:layout_marginTop="5dp">
+
+        </View>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separ1"
+            android:clipToPadding="false"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/fav1"
+        android:id="@+id/fav2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp">
+
+
+        <TextView
+
+            android:id="@+id/itemTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="6dp"
+            android:text="Conseils et Astuces"
+            android:textColor="#494848"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/separ2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:layout_below="@+id/itemTitle2"
+            android:layout_marginTop="5dp">
+
+        </View>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separ2"
+            android:clipToPadding="false"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
